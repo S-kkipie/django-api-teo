@@ -26,7 +26,7 @@ def plate_create(request):
     if serializer.is_valid():
         serializer.save()
         return Response(serializer.data)
-    return Response(serializer.data)
+    return Response(False)
 
 
 @api_view(['PUT'])
